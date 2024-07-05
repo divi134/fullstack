@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Arrays</title>
+</head>
+<body>
+	<h1>Array Methods</h1>
+	<p>This method creates new array and return after iteration is completed.</p>
+</body>
+<script type="text/javascript">
+	let trainees=['Divya','Ramya','Satya','Sravya'];
+	//syntax of map()
+	//arr.map(function funcName(currentEle,index,arr){
+	// code
+	//})
+	let names=trainees.map(function(ele){
+		console.log(ele);
+	})
+
+	let trainees1=[{
+		'name': 'divya',
+		'rollno': 531,
+	},{
+		'name': 'ramya',
+		'rollno': 505,
+	},{
+		'name': 'satya',
+		'rollno': 532,
+	},{
+		'name': 'sravya',
+		'rollno': 524,
+	}]
+	//anonymous function
+	trainees1.map(function(individual_trainee, i, arr)
+	{
+		console.log(individual_trainee.name+" "+individual_trainee.rollno)
+	})
+
+	//normal function
+	trainees1.map(test)
+	function test(individual_trainee, i, arr)
+	{
+		console.log(individual_trainee.name+" "+individual_trainee.rollno)
+	}
+</script>
+</html>

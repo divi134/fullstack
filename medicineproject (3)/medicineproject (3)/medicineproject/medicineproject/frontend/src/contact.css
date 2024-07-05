@@ -1,0 +1,38 @@
+.contact1 {
+  height: 450px;
+  width: 400px;
+  align-items: center;
+  border: 1px solid lightgray;
+
+  padding: 40px;
+  background-color: lightblue;
+}
+.main {
+  height: 450px;
+  width: 1000px;
+  margin-left: 195px;
+
+  box-shadow: 1px 1px 3px 5px gray;
+  margin-top: 10px;
+}
+.cons2 {
+  height: 450px;
+  width: 600px;
+  float: left;
+}
+.image {
+  height: 450px;
+  width: 600px;
+}
+.cons {
+  height: 450px;
+  width: 300px;
+  float: left;
+}
+.main1 {
+  height: 560px;
+  width: 1350px;
+
+  margin-top: 6px;
+  padding-top: 40px;
+}

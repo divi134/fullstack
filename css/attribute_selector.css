@@ -1,0 +1,9 @@
+input[type]{
+	color: hotpink;
+}
+input[type="text"]{
+	color: gray;
+}
+input[type="number"]{
+	color: blueviolet;
+}

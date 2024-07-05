@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="nextslide()">Increment</button>
+    <button onclick="previousslide()">Decrement</button>
+    <p>Slicers</p>
+    <div id="p_id">
+        <img src="sliders/1.jpg" style='width: 200px; height: 200px'> 
+    </div>
+    <script type="text/javascript">
+        var i=2;
+        function nextslide()
+        {
+           if(i<6)
+            {
+                var res=i++;
+                document.getElementById('p_id').innerHtml="<img src='sliders/"+res+".jpg' style='width:200px; height: 200px'>"
+            }
+        }
+        
+        function previousslide()
+        {
+            if(i>0)
+            {
+                var res=i--;
+                if(res!=6)
+                {
+                    document.getElementById('p_id').innerHtml="<img src='sliders/"+res+".jpg' style='width:200px; height: 200px'>"
+                }
+            }
+        }
+    </script>
+</body>
+</html>

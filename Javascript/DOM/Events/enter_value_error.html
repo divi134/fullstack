@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form1" action="#" onsubmit="required()">
+        <label>Enter Name</label>
+        <input type="text" name="text1" value="" >
+    </form>
+    <script type="text/javascript">
+        function required()
+        {
+            var empt = document.forms["form1"]["text1"].value;
+            if (empt == "")
+            {
+                alert("Please input a Value");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Methods</title>
+</head>
+<body>
+    <h1>Javascript | Script Methods</h1>
+   
+    <div id="display"></div>
+
+    <script>
+
+            var inputString = "Technical Hub"
+            var outputArea = document.getElementById("display");
+            var results = [];
+            results.push("Original String: "+inputString+"<br>");
+            results.push("substr(2, 5): "+inputString.substr(2, 5)+"<br>");
+            results.push("substring(3, 7): "+inputString.substring(3, 7)+"<br>");
+            results.push("replace('Hub', 'thub'): "+inputString.replace('Hub', 'thub')+"<br>");
+            results.push("search('thub'): "+inputString.search('thub')+"<br>");
+            results.push("toLocaleLowerCase(): "+inputString.toLocaleLowerCase()+"<br>");
+            results.push("toLocaleUpperCase(): "+inputString.toLocaleUpperCase()+"<br>");
+            results.push("indexOf('l'): "+inputString.indexOf('l')+"<br>");
+            results.push("includes('thub'): "+inputString.includes('thub')+"<br>");
+            results.push("slice(1, 4): "+inputString.slice(1, 4)+"<br>");
+            results.push("concat(' Code, Eat, Repeat'): "+inputString.concat(' Code, Eat, Repeat')+"<br>");
+            results.push("lastIndexOf('l'): "+inputString.lastIndexOf('l')+"<br>");
+            results.push("trim(): "+inputString.trim(5)+"<br>");
+            results.push("charCodeAt(5): "+inputString.charCodeAt(5)+"<br>");
+            results.push("charAt(3): "+inputString.charAt(3)+"<br>");
+            results.push("valueOf(): "+inputString.valueOf()+"<br>");
+            results.push("split(' '): "+JSON.stringify(inputString.split(' '))+"<br>");
+            results.push("toString(): "+inputString.toString()+"<br>");
+            results.push("match(): "+JSON.stringify(inputString.match('Hub'))+"<br>");
+            outputArea.innerHTML = results.join("<br>");
+        
+    </script>
+</body>
+</html>

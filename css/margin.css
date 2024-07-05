@@ -1,0 +1,46 @@
+h3{
+	margin: 10px;
+	border: 2px solid cyan;
+}
+p{
+	margin: 20px;
+	border: 2px solid blanchedalmond;
+}
+.abc{
+	height: 400px;
+	width: 700px;
+	margin: 10px;
+	border: 2px solid crimson;
+	background-color: lightblue;
+
+}
+.sub1{
+	height: 300px; 
+	width: 200px;
+	margin: 10px;
+	border: 2px coral;
+	float: left;
+	background-color: red;
+	border-radius: 15px;
+	align-content: center;
+}
+.sub2{
+	height: 200px; 
+	width: 200px;
+	margin: 10px;
+	border: 2px coral;
+	float: left;
+	background-color: yellow;
+	border-radius: 50%;
+	align-content: center;
+}
+.sub3{
+	height: 300px; 
+	width: 200px;
+	margin: 10px;
+	border: 2px coral;
+	float: left;
+	background-color: red;
+	border-radius: 50%;
+
+}

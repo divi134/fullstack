@@ -1,0 +1,143 @@
+body{
+	background-color: aliceblue;
+}
+.sub1{
+	width: 1520px;
+	height: 50px;
+	background-color: white;
+	margin: 0px;
+	padding: 0px;
+	box-shadow: 1px 1px 1px 1px lightgrey;
+}
+button
+{
+	width: 100px;
+	padding: 10px;
+	text-align: center;
+	margin: 6px 0px;
+	border-radius: 5px;
+	font-weight: normal;
+	background: skyblue;
+	cursor: pointer;
+	color: white;
+	border: 1px grey;
+}
+#abb{
+	background: yellowgreen;
+}
+#ab{
+	background: orangered;
+}
+.abc{
+	width: 150px;
+	font-size: 15px;
+	background: dodgerblue;
+}	
+select{
+	background: orangered;
+	border: none;
+	color: white;
+}
+#sub2{
+	width: 300px;
+	height: 530px;
+	background-color: white;
+	margin: 10px 30px 30px 300px;
+	float: left;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px 3px lightgrey;
+}
+img{
+	height: 100px;
+	width: 100px;
+	border:3px solid dodgerblue ;
+	border-radius: 50%;
+	margin-top: 20px;
+	margin-left: 100px;
+	align-content: center;
+}
+#fsd{
+	text-align: center;
+	margin: 5px;
+	color:  grey;
+	text-style: cursive;
+}
+#b1{
+	
+	background: dodgerblue;
+	color: white;
+
+}
+#b2{
+	background: white;
+	color: dodgerblue;
+	border: 1px solid dodgerblue;
+}
+.sub3{
+	width: 600px;
+	height: 300px;
+	background-color: white;
+	margin: 10px 30px 30px 10px;
+	float: left;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px 3px lightgrey;
+}
+form{
+	margin: 30px;
+}
+.labell{
+    width:90px;
+    clear:left;
+    text-align:left;
+    padding:10px;
+    float: left;	
+    font-weight:bold;
+}
+.inputt{
+	width: 350px;
+	height: 25px;
+    float:right;
+}
+progress, label{
+	width: 550px;
+	margin-left: 20px;
+}
+h3{
+	margin-left: 20px;
+}
+font{
+	font-size: 15px;
+	padding-left: 5px;
+	margin-top: 12px;
+	margin-right: 13px;
+	font-weight: bold;
+}
+
+#m{
+	font-size: 15px;
+	float: right;
+}
+hr{
+	color: blue;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+i{
+	margin-left: 30px;
+	margin-top: 10px;
+	font-weight: bolder;
+}
+progress {
+   width: 550px;
+   height : 5px;
+   border: 2px solid gray;
+   border-radius: 5px;
+   margin: 10px 5px;
+}
+progress::-webkit-progress-bar {
+   background-color: white;
+}
+progress::-webkit-progress-value {
+   background-color: blue;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap task1</title>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6 mt-3 ps-5 ms-5">
+				<h1>Company Name</h1></div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6 mt-3">
+				<img src="https://img.freepik.com/free-vector/mobile-development-concept-illustration_114360-5158.jpg?w=740&t=st=1691591287~exp=1691591887~hmac=7466608bb8f01d0f2b0817782aad92375eafc94f5701bdd0957d836b616c50d5" class="ps-5 pt-5 pb-5 ms-5 w-50">
+				<h1 class="ps-5  ms-5">Create an Account</h1>
+        		<p class="ps-5  ms-5"><i>Create a minimal registration page using Bootstrap 5<br>Html form elements<br>snippet by <a href="#">Bootrapious</a></i></p>
+			</div>
+			<div class="col-md-6 mt-3 ">
+				<div class="row">
+					<div class="col-md-6">
+						<form action="/action_page.php">
+	    				<div class="input-group mb-3">
+	     	 				<span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+	      					<input type="text" class="form-control" placeholder="First Name" name="First Name">
+	    				</div>
+					</form>
+					</div>
+					<div class="col-md-6">
+						<form action="/action_page.php">
+	    				<div class="input-group mb-3">
+	     	 				<span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+	      					<input type="text" class="form-control" placeholder="Last Name" name="Last Name">
+	    				</div>
+					</form>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md">
+						<form action="/action_page.php">
+							<div class="input-group mb-3">
+								<span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+	      						<input type="text" class="form-control" placeholder="Email Address" name="email">
+	    					</div>
+						</form>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<form action="/action_page.php">
+							<div class="input-group mb-3">
+								<span class="input-group-text"><i class="fa-sharp fa-solid fa-square-phone"></i>
+								<div class="dropdown">
+							    	<button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">
+							     	 +12
+							    	</button>
+							    	<ul class="dropdown-menu">
+							      		<li>+91</li>
+							      		<li>000</li>
+							      		<li>+98</li>
+							    	</ul>
+							  	</div></span>
+	      						<input type="number" class="form-control" placeholder="Phone Number" name="number">
+	    					</div>
+						</form>
+					</div>
+				</div>
+				<div class="row mt-3">
+					<div class="col-md-12">
+						 <div class="dropdown dropdown-menu-end">
+						 	<span class="input-group-text"><i class="fa-sharp fa-solid fa-square-phone"></i>
+						    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">
+						      Choose your job
+						    </button>
+						    <ul class="dropdown-menu">
+						      <li><a class="dropdown-item" href="#">Link 1</a></li>
+						      <li><a class="dropdown-item" href="#">Link 2</a></li>
+						      <li><a class="dropdown-item" href="#">Link 3</a></li>
+						    </ul></span>
+						  </div>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-md-6">
+						<form action="/action_page.php">
+	    				<div class="input-group mb-3">
+	     	 				<span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+	      					<input type="password" class="form-control" placeholder="Password" name="password">
+	    				</div>
+					</form>
+					</div>
+					<div class="col-md-6">
+						<form action="/action_page.php">
+	    				<div class="input-group mb-3">
+	     	 				<span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+	      					<input type="password" class="form-control" placeholder="Confirm Password" name="password">
+	    				</div>
+					</form>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md d-grid" >
+						<button type="button" class="btn btn-primary btn-block">Create your account</button>
+					</div>
+				</div>
+				<hr><center><h3>or</h3></center><hr>
+              	<div class="row">
+              		<div class="col-md d-grid" >
+                		<button type="button" class="btn btn-primary w-100"><i class="fa-brands fa-facebook"></i>&nbsp;Continue with Facebook</button>
+                	</div>
+              	</div>
+              	<br>
+              	<div class="row">
+              		<div class="col-md d-grid" >
+                		<button type="button" class="btn btn-primary w-100"><i class="fa-brands fa-twitter"></i>&nbsp;Continue with Twitter</button>
+                	</div>
+              	</div>
+              	<br>
+              	<p class="text-center">Already registered? &nbsp;<a href="#">Login</a></p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

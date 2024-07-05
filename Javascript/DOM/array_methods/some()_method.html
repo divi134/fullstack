@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>some Method</title>
+</head>
+<body>
+    <h2>Array Methods | some()</h2>
+    <p>This method returns boolean value. It checks all the values in the array and if any one of the elements in the array satisfies the given condition then it returns true or else false</p>
+    <script>
+        let student_marks= [87,56,89,44,76,23,90,69,65]
+        let final_result = student_marks.some(function(score)
+        {
+            return score>40;
+        })
+        console.log(final_result)
+
+        let mail = ['divya@gmail.com', 'ramya@gmail.com', 'satya@gmail.com', 'sravya@gmail.com']
+        let exist_mail_or_not = mail.some(function(email, i, ind)
+        {
+            return email=='divsi@gmail.com'
+        })
+        console.log(exist_mail_or_not)
+    </script>
+</body>
+</html>

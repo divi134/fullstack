@@ -1,0 +1,71 @@
+{
+    "title": "about",
+    "content": [
+        {
+            "section": "about-section",
+            "section_title": {
+                "title": "Enhancing Coding <br> For Your Dedicated Dreams"
+            },
+            "image": {
+                "src": "/images/bg/bg-img-0006.jpg"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "title": "Why We Do This",
+                    "description": "Coding allows programmers to build programs, such as websites and apps. Computer programmers can also tell computers how to process data in better, faster ways."
+                    
+                },
+                {
+                    "id": 2,
+                    "title": "Helping You <br/> Grow In Every Stage.",
+                    "description": " ''Helping You Growth In Every Stage''  is a promise and commitment in the coding platform to support individuals at every level of their coding journey. From beginners taking their first steps into programming to seasoned developers tackling complex projects, the platform aims to provide resources, guidance, and a supportive community that fosters continuous learning and growth.  "
+                }
+            ]
+        },
+        {
+            "section": "quote-section",
+            "section_title": {
+                "title": "What our Coding Hub Platform Provides for your Better Coding"
+            },
+            "texts": [
+                {
+                    "id": 1,
+                    "content": "Our coding platform is designed to cater to both group coding and individual coding needs, offering a range of features and resources to enhance the coding experience.     Foster a vibrant and supportive community where users can ask questions, share knowledge, and collaborate on coding problems. Include forums, chat rooms, and peer-to-peer learning opportunities."
+                }
+            ]
+        },
+               
+        {
+            "section": "cta-section",
+            "headings": [
+                {
+                    "id": 1,
+                    "content": "Improve Your Coding Knowledge Right  Now!"
+                }
+            ],
+            "texts": [
+                {
+                    "id": 1,
+                    "content": "Coding is such a practice where you can sharpen up your solving skills through our website which offers various problems to strengthen your talent in coding."
+                }
+            ],
+            "buttons": [
+                {
+                    "id": 1,
+                    "path": "/sign-up",
+                    "content": "Sign Up Now"
+                }
+            ],
+            "image": {
+                "src": "/images/bg/bg-img-0002.jpg"
+            }
+        },
+        {
+            "section": "blog-section",
+            "section_title": {
+                "title": "Our Recent Blog"
+            }
+        }
+    ]
+}

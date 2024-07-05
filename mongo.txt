@@ -1,0 +1,40 @@
+mongo
+
+
+mongosh
+shows the number of databases: show dbs
+to switch from one database to another database: use students
+db.createCollection("collectionname")
+to create collection: db.createCollection("Marks")
+to view collections: show collections
+To insert single data/ document: db.marks.insertOne({Name:"divya", Rollno:"531", Branch:"CSE", marks:"93"})
+To find data: db.marks.find()
+To insert multiple documents: db.marks.insertMany({Name:"divya", Rollno:"531", Branch:"CSE", marks:"93"}, {Name:"ramya", Rollno:"505", Branch:"CSE", marks:"94"}, {Name:"satya", Rollno:"532", Branch:"CSE", marks:"83"}, {Name:"sravya", Rollno:"524", Branch:"CSE", marks:"96"})
+To check number of documents: db.collectionname.find().count()
+db.marks.find().count()
+To view a particular document: db.collectionname.find({Name:"Fieldname"})
+db.marks.find({Name:"Divya"})
+db.marks.find().limit(2).skip(1)
+limit() and skip(): The limit method will be used to return the maximum number of results from the collection, while the skip method is used to skip the number of documents from the collection in MongoDB 
+$eq-> eq means equal
+SQL- relationship management database. Data is stored in tables in format. 
+data is added in the rows. 
+columns.
+To change field value, to update single field value: db.collectionname.updateOne({Fieldname:"Fieldvalue"}, {$set:{Fieldname:"Fieldvalue"}})
+db.Marks.updateOne({Rollno:"531"}, {$set:{Name:"Divya Sri"}})
+To update multiple field values: 
+db.collectionname.updateOne({Fieldname:"Fieldvalue"}, {$set:{Fieldname:"Fieldvalue", Fieldname:"Fieldvalue"}})
+db.Marks.updateOne({Rollno:"532"}, {$set:{Name:"Satya Sai",Marks:"76"}})
+To add new field to the existing record: db.collectionname.updateOne({Fieldname:"Fieldvalue"},{$set:{Fieldname:"Fieldvalue"}},{upsert:true})
+ db.Marks.updateOne({Name:"Sravya"},{$set:{College:"ACET"}},{upsert:true})
+$or: The $or operator performs a logical OR operation on an array of one or more <expressions> and selects the documents that satisfy at least one of the <expressions>.
+db.Marks.find({$or:[{Marks:"80"}, {Marks:"76"}]})
+
+mongo- document oriented database. scalability, flexibility. It can store large data easily. 
+bsn to jsn
+Data is stored in Collections
+data is added inti documents(bson)
+Fields
+
+
+Aggregation: Aggregation is a way of processing a large number of documents in a collection by means of passing them through different stages. The stages make up what is known as a pipeline. The stages in a pipeline can filter, sort, group, reshape and modify documents that pass through the pipeline.

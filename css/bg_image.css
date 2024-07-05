@@ -1,0 +1,22 @@
+body{
+	background-image: url('bgimage.webp');
+	background-size: cover;
+}
+.sub{
+	height: 746px; 
+	width: 1511px;
+}
+.sub1{
+	height: 500px;
+	width: 500px;
+	background-image: url('bg.jpeg');
+	background-size: cover;
+	float: left;
+}
+.sub2{
+	height: 500px;
+	width: 500px;
+	background-image: url('bgg.jpeg');
+	background-size: cover;
+	float: right;
+}

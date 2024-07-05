@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JAVA</title>
+</head>
+<body>
+	<h1>Variables in java</h1>
+	<script>
+		var name='rekha';
+		name +=' ramya';
+		name +=',geetha';
+		document.write(name,"<br>");
+		document.write(typeof(name),"<br>");
+		var b=10.33;
+		document.write("<br>",b);
+		document.write("<br>",typeof(b),"<br>");
+		var a;
+		a +='java';
+		document.write("<br>",a,"<br>");
+		var c=true;
+		document.write("<br>",typeof(c),"<br>");
+		var arr=['divya', 31, true];
+		document.write("<br>",arr);
+		document.write("<br>",typeof(arr),"<br>");
+		var arr1=[5,3,5,62,5,2,2,1,'hgf', 'edcfgbh'];
+		console.log(arr1);
+		document.write("<br>",arr1,"<br>");
+		document.write(arr1[9],"<br>");
+		document.write(typeof(arr1[9]),"<br>");
+		document.write(arr1[4],"<br>");
+		var trainee ={
+			'namee':'divya',
+			'roll_no':531,
+			'college':'ACET',
+			'branch':'CSE',
+		}
+		document.write("<br>",trainee.namee,"<br>");
+		document.write(trainee.roll_no,"<br>");
+		document.write(trainee.college,"<br>");
+		document.write(trainee.branch,"<br>");
+		console.log(trainee.namee);
+		console.log(trainee.roll_no);
+		console.log(trainee.college);
+		console.log(trainee.branch);
+		var trainees =[{
+			'namee':'divya',
+			'roll_no':531,
+			'college':'ACET',
+			'branch':'CSE',
+		},
+		{
+			'namee':'ramya',
+			'roll_no':505,
+			'college':'ACET',
+			'branch':'CSE',
+		}]
+		document.write("<br>",trainees[0].namee,"<br>");
+		document.write(trainees[0].roll_no,"<br>");
+		document.write(trainees[0].college,"<br>");
+		document.write(trainees[0].branch,"<br>");
+		console.log(trainees[0].namee);
+		console.log(trainees[0].roll_no);
+		console.log(trainees[0].college);
+		console.log(trainees[0].branch);
+		document.write("<br>",trainees[1].namee,"<br>");
+		document.write(trainees[1].roll_no,"<br>");
+		document.write(trainees[1].college,"<br>");
+		document.write(trainees[1].branch,"<br>");
+		console.log(trainees[1].namee);
+		console.log(trainees[1].roll_no);
+		console.log(trainees[1].college);
+		console.log(trainees[1].branch);
+
+		for (var i = 0; i < trainees.length; i++) {
+			for(key in trainees[i]);
+			{
+				document.write(trainees[i][key],"<br>");
+			}
+			document.write("<br>");
+		}
+	</script>
+</body>
+</html>

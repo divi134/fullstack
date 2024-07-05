@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Series</title>
+</head>
+<body>
+    <h2>Display Fibonacci Series by given number</h2>
+    <input type="number" id="number">
+    <button onclick="Fibonacci()">Display</button>
+    <p id="result"></p>
+
+    <script>
+        function Fibonacci() {
+        var number = document.getElementById("number").value;
+        var fibonacciSeries = [0, 1];
+
+        for (var i = 2; i < number; i++) {
+            var nextNumber = fibonacciSeries[i - 1] + fibonacciSeries[i - 2];
+            fibonacciSeries.push(nextNumber);
+        }
+
+        document.getElementById("result").innerHTML = fibonacciSeries.join(", ");
+        }
+    </script>
+</body>
+</html>

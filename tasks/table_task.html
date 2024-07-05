@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Details</title>
+</head>
+<body>
+  <h1>Product Details</h1>
+  <table id="productTable">
+    <thead>
+      <tr>
+        <th>Product Id</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>456789</td>
+        <td>Realme mobile</td>
+        <td>16000</td>
+        <td>
+          <button onclick="editRow(this)">Edit</button>
+          <button onclick="deleteRow(this)">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>123456</td>
+        <td>MI mobile</td>
+        <td>18000</td>
+        <td>
+          <button onclick="editRow(this)">Edit</button>
+          <button onclick="deleteRow(this)">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>365648</td>
+        <td>Vivo mobile</td>
+        <td>20000</td>
+        <td>
+          <button onclick="editRow(this)">Edit</button>
+          <button onclick="deleteRow(this)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <button onclick="addNewRow()">+ Add New</button>
+
+  <script>
+    function deleteRow(button) {
+      const row = button.parentNode.parentNode;
+      const confirmDelete = confirm("Do you want to delete the record?");
+      if (confirmDelete) {
+        row.remove();
+      }
+    }
+
+    function editRow(button) {
+      const row = button.parentNode.parentNode;
+      const cells = row.getElementsByTagName("td");
+      const productId = cells[0].textContent;
+      const name = cells[1].textContent;
+      const price = cells[2].textContent;
+
+      const newProductId = prompt("Enter new Product Id:", productId);
+      const newName = prompt("Enter new Name:", name);
+      const newPrice = prompt("Enter new Price:", price);
+
+      if (newProductId && newName && newPrice) {
+        cells[0].textContent = newProductId;
+        cells[1].textContent = newName;
+        cells[2].textContent = newPrice;
+      }
+    }
+
+    function addNewRow() {
+      const table = document.getElementById("productTable").getElementsByTagName("tbody")[0];
+      const newRow = table.insertRow();
+      const cell1 = newRow.insertCell(0);
+      const cell2 = newRow.insertCell(1);
+      const cell3 = newRow.insertCell(2);
+      const cell4 = newRow.insertCell(3);
+
+      const newProductId = prompt("Enter Product Id:");
+      const newName = prompt("Enter Name:");
+      const newPrice = prompt("Enter Price:");
+
+      if (newProductId && newName && newPrice) {
+        cell1.textContent = newProductId;
+        cell2.textContent = newName;
+        cell3.textContent = newPrice;
+        cell4.innerHTML = `
+          <button onclick="editRow(this)">Edit</button>
+          <button onclick="deleteRow(this)">Delete</button>`;
+      }
+    }
+  </script>
+</body>
+</html>

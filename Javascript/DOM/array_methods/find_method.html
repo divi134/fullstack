@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Array Method</title>
+</head>
+<body>
+    <p>This methid returns the value when the condition is satisfied then exits from the iteration loop</p>
+    <script>
+        let trainees = ['divya', 'ramya', 'sravya', 'satya'];
+        let getonename = trainees.find(function(name)
+        {
+            return name.startsWith('d');
+        })
+        console.log(getonename)
+
+        let getonename1 = trainees.find(test)
+        function test(name)
+        {
+            return name.startsWith('sa');
+        } 
+        console.log(getonename1)
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+HTML creates content for website
+CSS changes the appearance of the website
+Javascript makes our website interactive
+What is javascript and how does it work?
+JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.
+JavaScript can update and change both HTML and CSS.
+JavaScript can calculate, manipulate and validate data.
+Javascript is case-sensitive.
+Modifying the webpage is one of the most important features of Javascript.
+
+Order of Operations: 
+(...)
+* /
++ -
+
+How to round a number in javascript:
+Math.round(number)
+
+var a = 5.678948;
+let b = 10.257683;
+let result1 = a.Tofixed();
+let result2 = b.toFixed(2);
+console.log(result1)
+console.log(result2)
+console.log(typeof result2)
+
+6
+10.26
+string
+
+Concatenation:
+'some' + 'string'
+'somestring'
+
+typeof 2
+'number'
+
+typeof 'hello'
+'string'
+
+Type coercion (automatic type conversion):
+'hello' + 3
+'hello3'
+
+'$' + 20.95 + 7.99
+'$20.957.99
+
+"Javascript iterates(renders) from left to right"
+
+Strings also follows the Order of operations: 
+
+'$' + (20.95 + 7.99) 
+'$28.9399999999999998'
+
+3 ways to create a string:
+'....'
+"...."
+`....` (backticks)
+
+Interpolation:
+Insert value directly into a string
+
+`items (${1+1})`
+'items (2)'
+
+Escape characters:
+\'  
+\"
+\n
+
+

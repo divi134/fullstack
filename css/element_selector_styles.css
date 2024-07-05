@@ -1,0 +1,20 @@
+.ab{
+	font-size: 30px;
+	color: cornsilk;
+	font-family: inherit;
+}
+#abc{
+	font-size: 30px;
+	color: mistyrose;
+	font-family: fantasy;
+}
+p{
+	color:fuchsia;
+	font-size: 30px; 
+	font-family: sans-serif;
+}
+div{
+	height: 100px;
+	width : 100px;
+	background-color: oldlace;
+}

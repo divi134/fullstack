@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Method</title>
+</head>
+<body>
+    <h2>Array Methods | Filter</h2>
+    <p>This method creates a new array and if the condition is satisfied then it will return after the iteration is completed</p>
+    <script>
+        let nums = [23,8765,656,76,99,54,67,98,532];
+        let even_nums = nums.filter(function(ele)
+        {
+            return ele%2===0
+        })
+        document.write(even_nums+"<br>")
+        console.log(even_nums)
+
+        let odd_nums = nums.filter(function(ele)
+        {
+            return ele%2!=0
+        })
+        document.write(odd_nums)
+        console.log(odd_nums)
+    </script>  
+</body>
+</html>

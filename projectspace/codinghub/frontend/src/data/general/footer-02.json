@@ -1,0 +1,13 @@
+{
+    "id": "footer-data-02",
+    "logo": [
+        {
+            "src": "/images/logo/logo-white.png",
+            "alt": "logo",
+            "margin-right":"200px",
+            "border":"1px solid red"
+            
+        }
+    ],
+    "copyright_text": " All rights reserved by Coding Hub"
+}

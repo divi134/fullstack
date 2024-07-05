@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 30%;
+            border: 2px solid black;
+            text-align: center;
+        }
+        th,td{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table id="Course_Table">
+        <tr>
+            <th>Course Name</th>
+            <th>Course Number</th>
+            <th>Branch</th>
+            <th>Place</th>
+        </tr>
+    </table>
+    <script>
+        var Courses = [
+            {name: 'Ramya', Number:'505', Branch:'CSE',  place: 'ACET'},
+            {name: 'Divya', Number:'531', Branch:'CSE', place: 'ACET'} ,  
+            {name: 'Sravya', Number:'524', Branch:'CSE',  place: 'ACET'},    
+            {name: 'Satya', Number:'532', Branch:'CSE', place: 'ACET'}  
+        ];
+
+        var table = document.getElementById('Course_Table');
+
+        for (var i=0; i< Courses.length;i++){
+            var course = Courses[i];
+            var row = document.createElement('tr');
+
+            var nameCell = document.createElement('td');
+            nameCell.textContent = course.name;
+            row.appendChild(nameCell);
+
+            var Numbercell = document.createElement('td');
+            Numbercell.textContent = course.Number;
+            row.appendChild(Numbercell);
+
+            var BranchCell = document.createElement('td');
+            BranchCell.textContent = course.Branch;
+            row.appendChild(BranchCell);
+
+            // var Feescell = document.createElement('td');
+            // Feescell.textContent = course.Fees;
+            // row.appendChild(Feescell);
+
+            var placecell = document.createElement('td');
+            placecell.textContent = course.place;
+            row.appendChild(placecell);
+
+            table.appendChild(row);
+        }
+    </script>
+
+</body>
+</html>

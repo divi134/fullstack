@@ -1,0 +1,66 @@
+/* Feedback.css */
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  #contactus {
+    color: #007bff;
+  }
+  
+  .contact-info {
+    flex: 1;
+  }
+  
+  .contact-item {
+    margin-bottom: 20px;
+  }
+  
+  .contact-item label {
+    font-weight: bold;
+  }
+  
+  .comment-box {
+    flex: 1;
+  }
+  
+  .comment-box form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .comment-box label {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .inp,
+  .text-area {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+  }
+  
+  #submit {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #submit:hover {
+    background-color: #45a049;
+  }
+  
+  .sub {
+    align-self: flex-end;
+  }

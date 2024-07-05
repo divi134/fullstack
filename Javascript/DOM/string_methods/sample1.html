@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+<body>
+    <h3>String Methods</h3>
+    <table border="1px solid black" cellpadding="30px" cellspacing="30px">
+        <!-- <tr>
+            <td>P</td>
+            <td>.</td>
+            <td>D</td>
+            <td>I</td>
+            <td>V</td>
+            <td>Y</td>
+            <td>A</td>
+            <td>S</td>
+            <td>R</td>
+            <td>I</td>
+        </tr>  -->
+        <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>    
+    </table>
+    
+    <script>
+        function getstr(str)
+        {
+            document.write("<b>"+str+"</b><br>")
+        }
+        let name='Divya Sri';
+        getstr("original String: "+name)
+        getstr("String length: "+name.length) // length of the given string
+        getstr("Character at 2nd index: "+name.charAt(2)) // Character at given index
+        getstr("Index of character v: "+name.indexOf('v')) //index of given character
+        getstr("Index of 2nd way: "+name.indexOf('Sri'))
+        getstr("Last Index of repeated character: "+name.lastIndexOf('i')) //lat index of the repeated characters
+        let name1='DIVYA SRI'
+        getstr("To Lower Case: "+name1.toLowerCase())  //lower case
+        getstr("To Upper Case: "+name.toUpperCase()) // upper case
+        let name2='pithani'
+        getstr("Concatenation of string: "+name.concat(" "+name2," "+name1)) //concatenation of strings
+        let name3='           manikanta   '
+        getstr("trim() method: "+name3)
+        getstr("trim() method: "+name3.trim())
+        let name4= 'divya and ramya'
+        getstr(name4.split("and"))
+        let name5= 'technical hub'
+        getstr(name5.startsWith('j'))
+        getstr(name5.startsWith('t'))
+        getstr(name5.endsWith('k'))
+        getstr(name5.endsWith('b'))
+
+
+        //slice method
+        //string_name('slice of string = '+str.slice(startpos, endpos-1));
+        //EX: getstr("Slice of string: "+name6.slice(2,6))  --> The sliced string will have the indices from 2 to 5. 
+        //it allows both positive and negative index values
+        /*
+            s      l      i      c      i      n      g           m      e      t      h      o      d
+            0      1      2      3      4      5      6     7     8      9      10     11     12     13
+           -14    -13    -12    -11    -10    -9     -8    -7    -6     -5     -4      -3     -2     -1
+        */
+        let name6= 'slicing method'
+        getstr("Original String: "+name6)
+        getstr("Slice of string: "+name6.slice(2,6)) //slicing a string
+        getstr("Slice of string: "+name6.slice(-8,-2))
+        getstr("Slice of string: "+name6.slice(-2))
+
+        //substring method
+        //it allows only positive indexes
+        //if we give the argument in reverse order, that means greater index followed by lower index, then the substring method will treat it the same as the lower index followed by greater index.
+        //The difference is that start and end values less than 0 are treated as 0 in substring().
+        let name7= 'Your Name'
+        getstr("Substring: "+name7.substring(1,5));
+        getstr("Substring:"+name7.substring(5,1));
+
+        //substr() method
+        //The difference is that the second parameter specifies the length of the extracted part.
+        let name8='Kimetsu Noyaiba'
+        getstr('Substr: '+name8.substr(2,5));
+
+        //includes method
+        //The includes() method returns true if a string contains a specified string.
+        //Otherwise it returns false.
+        //The includes() method is case sensitive.
+        let name10='Attack on Titan'
+        getstr('Original String: '+name10)
+        getstr('Includes: '+name10.includes('Titan'));
+
+        //repeat method
+        let name11='tanjiro '
+        getstr("Original String: "+name11)
+        getstr('Repetition of the string: '+name11.repeat(3));
+
+        let name12='kamado tanjiro'
+        getstr("Original String: "+name12)
+        getstr('Repetition of the string: '+name12.replace('tanjiro', 'gonpachiro'));
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.signup {
+    background-color: white;
+    border:2px solid gray;
+    border-radius:10px;
+    padding:50px;
+    align-content: center;
+    margin-left:450px;
+    height:400px;
+    width:500px;
+    box-shadow: 4px 4px 15px lightgray;
+}
+#but{
+    width:170px;
+    height:31px;
+    margin-left:30px;
+    border-radius:5px;
+    color:black;
+    background-color: lightskyblue;
+    box-shadow: 1px 1px 2px lightgray;
+
+   
+}
+#buttn{
+    width:170px;
+    height:31px;
+    margin-left:30px;
+    border-radius:5px;
+    background-color:rgb(252, 251, 251);
+    color:rgb(47, 154, 255);
+    box-shadow: 1px 1px 2px lightgray;
+
+   
+}

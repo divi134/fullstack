@@ -1,0 +1,11 @@
+.slideshow {
+    width: 100%;
+    max-width: 900px; 
+    margin: auto;
+    }  
+
+    .slideshow img {
+    width: 100%;
+    height: auto;
+    /* display: none; */
+    }

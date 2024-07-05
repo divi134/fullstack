@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="task_slideshow.css">
+</head>
+<body>
+    <center><h1>Slideshow</h1></center>
+    <div class="slideshow">
+        <img src="sliders/1.jpg" alt="Image 1">
+        <img src="sliders/2.jpg" alt="Image 2">
+        <img src="sliders/3.jpg" alt="Image 3">
+        <img src="sliders/4.jpg" alt="Image 4">
+        <img src="sliders/5.jpg" alt="Image 4">
+      </div>
+      <script>
+        const images = document.querySelectorAll('.slideshow img');
+        let currentIndex = 0;   
+        function showNextImage() {
+        images[currentIndex].style.display = 'none';
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].style.display = 'block';
+        }
+        setInterval(showNextImage, 1000); // Change image every 1 second
+      </script>
+</body>
+</html>

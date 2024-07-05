@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //case sensitive
+        let re=/batch/
+        let output=re.test("fullstack batch")
+        console.log(output)
+        let output1=re.test("fulldtack Batch")
+        console.log(output1)
+
+        let re1=/^b/
+        let output3=re1.test("batch")
+        console.log(output3)
+        let output4=re1.test("tbatch")
+        console.log(output4)
+
+        let a="batch"
+        re2=new RegExp('{a}')
+        output5 = re2.test("fullstack batch")
+        console.log(output5)
+
+        re = /batch/g; //g for multiple indexes
+        res=re.exec("full stach batch course batch")
+        console.log(res)
+        console.log(res.index)
+        res = re.exec("full stack batch course batch")
+        console.log(res)
+        console.log(res.index)
+
+        re = /^[0-9]{10}/
+        output = re.test("9876543210");
+        console.log(output)
+        output = re.test("7654567876543254");
+        console.log(output);
+
+        re = /^[0-9]{10}$/
+        output = re.test("9876543210");
+        console.log(output)
+        output = re.test("7654567876543254");
+        console.log(output);
+
+        var str='divya'
+        var str1='DIVYA'
+        console.log(str===str1)
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>addons</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+		button{
+			border: 0px;
+		}
+		#button{
+			width: 200px;
+			border: 1px solid black;
+			border-radius: 50px;
+			background: skyblue;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row mt-2">
+			<div class="col-md-4 bg-white">
+				<h1>Product <b>Details</b></h1>
+			</div>
+			<div class="col-md-6 bg-white"></div>
+			<div class="col-md-2 bg-white">
+				<button onclick="addNewRow()" id="button">+ add</button>
+			</div>
+		</div>
+
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th>Product id</th>
+					<th>Name</th>
+					<th>Price</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>456789</td>
+					<td>Realme Mobile</td>
+					<td>16000</td>
+					<td><button onclick="editRow(this)"  id="actions"><i class="fa-solid fa-pencil" style="color: #ffc946;"></i></button>
+						<button onclick="deleteRow(this)" ><i class="fa-solid fa-trash" style="color: #e4482d;"></i></td>
+
+
+				</tr>
+
+				<tr>
+					<td>456789</td>
+					<td>Realme Mobile</td>
+					<td>16000</td>
+					<td><button onclick="editRow(this)" id="actions"><i class="fa-solid fa-pencil" style="color: #ffc946;"></i></button>
+						<button onclick="deleteRow(this)" ><i class="fa-solid fa-trash" style="color: #e4482d;"></i></td>
+
+
+				</tr>
+
+				<tr>
+					<td>456789</td>
+					<td>Realme Mobile</td>
+					<td>16000</td>
+					<td><button onclick="editRow(this)"  id="actions"><i class="fa-solid fa-pencil" style="color: #ffc946;"></i></button>
+						<button onclick="deleteRow(this)" ><i class="fa-solid fa-trash" style="color: #e4482d;"></i></td>
+
+
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

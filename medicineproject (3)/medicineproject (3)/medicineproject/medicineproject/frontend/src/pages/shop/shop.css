@@ -1,0 +1,64 @@
+.shopTitle{
+    color:green;
+    padding-top:50px;
+    text-align: center;
+    font-size:40px;
+}
+.products{
+    width:100%;
+    height:auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    margin-bottom: 20px;
+}
+.product{  
+    border-radius:1rem;
+    width:18rem;
+    height:28rem;
+    margin-top:15px;
+    margin-left:15px;
+    margin-bottom:15px;
+    padding:0px;
+    display:flex;
+    box-shadow:2px 2px 2px 4px gray;
+    flex-direction:column;
+    align-items:center;
+}
+.product img{
+    border-radius:1rem;
+    width:20px;
+    height:200px;
+    
+   
+}
+.product .description{
+    padding:5px;
+    text-align:center;
+    font-size:15px;
+}
+.product:hover{
+    transition: 0.3s ease-in;
+    cursor:pointer
+}
+.addToCartBtn{
+    background-color: skyblue;
+    border:2px solid black;
+    min-width:150px;
+    height:40px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    color:black;
+}
+.addToCartBtn:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.name{
+    font-size:20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

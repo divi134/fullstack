@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <select onchange="getcollege(this.value)" style="width: 300px; height: 30px;">
+        <option>---Select college---</option>
+        <option value="AEC">AEC</option>
+        <option value="ACET">ACET</option>
+        <option value="ACOE">ACOE</option>
+    </select> 
+    <p id="p_id"></p> 
+    </center>
+    <script>
+        function getcollege(college_name)
+        {
+            document.getElementById('p_id').innerText=college_name;
+            // alert(college_name);
+        }
+    </script>
+</body>
+</html>

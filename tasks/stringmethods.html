@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>STRING METHODS</title>
+</head>
+<body>
+	<center>
+		<h1>JavaScript | STRING_METHODS</h1>
+		<hr></center>
+		<h3>1.Substr()</h3>
+		<script type="text/javascript">
+			function getstr(str){
+				document.write("<b>"+str+"</b><br>");
+			}
+			let name='TECHNICAL HUB'
+            getstr("Original String: "+name);
+			getstr("Substr of a String: "+name.substr(1,4));
+			
+		</script>
+	<h3>2.Substring()</h3>
+		<script type="text/javascript">
+			function getstr(string){
+				document.write("<b>"+string+"</b><br>");
+
+			}
+			let name2='Technical Hub'
+            getstr("Original String: "+name2);
+			getstr('substring of a string: '+name2.substring(1,3));
+			   
+		</script>
+
+    <h3>3.Replace()</h3>
+		<script type="text/javascript">
+			function getstr(replace){
+				document.write("<b>"+replace+"</b><br>");
+			}
+			let name3='ADITYA COLLEGE OF ENGINEERING AND TECH'
+            getstr("Original String: "+name3);
+			getstr('Replacement of string:'+name3.replace('TECH','TECHNOLOGY'));
+			
+		</script>
+	<h3>4.Search()</h3>
+	<script type="text/javascript">
+		let name4='Searchmethod';
+		
+    	function method4(name4) {
+            getstr("Original String: "+name4)
+    		document.write("<b>Search of a String: </b>"+name4+"<br>");
+    		
+    	}
+    	method4(name4.search('method'));
+    	
+	</script>
+
+	<h3>5.ToLowerCase()</h3>
+		<script type="text/javascript">
+			function getstr(str){
+				document.write("<b>"+str+"</b><br>");
+
+
+			}
+			let name5='FULL STACK DEVELOPER'
+            getstr("Original String: "+name5)
+			getstr("To Lower Case of a String: "+name5.toLowerCase())
+		</script>
+	<h3>6.ToUpperCase()</h3>
+		<script type="text/javascript">
+			function getstr(str){
+				document.write("<b>"+str+"</b><br>");
+
+
+			}
+			let name6='full stack developer'
+            getstr("Original String: "+name6)
+			getstr("To Upper Case of a String: "+name6.toUpperCase())
+		</script>
+
+	<h3>7.indexof()</h3>
+	<script type="text/javascript">
+		let name7='indexofstringmethod';
+    	function method7(name7) 	{
+    		document.write("<b>Indexof of a String: </b>"+name7+"<br>");
+    	}
+    	method7(name7.indexOf('of'));
+	</script>
+	<h3>8.Includes()</h3>
+	<script type="text/javascript">
+		function getstr(str8){
+		document.write("<b>"+str8+"</b><br>");
+	}
+	let name8='includes '
+    getstr("Original String: "+name8)
+		getstr('includes of string = '+name8.includes('includes'));
+		getstr('includes of string ='+name8.includes('INCLUDES'));
+	</script>
+	<h3>9.Slice()</h3>
+	<script type="text/javascript">
+			function getstr(str9){
+		document.write("<b>"+str9+"</b><br>");
+	}
+	let name9='Engineering';
+    getstr("Original String: "+name9)
+	getstr('slice of string = '+name9.slice(1,4));
+	   
+	</script>
+	<h3>10.Concat()</h3>
+	<script type="text/javascript">
+		function getstr(str10){
+		document.write("<b>"+str10+"</b><br>");
+	}
+	   let con1=' DRIVE   ';
+	   let con2=' READY ';
+	   getstr("Concate of String="+con1.concat(con1,con2))
+	   getstr("Concate of String="+con2.concat(con2))
+	</script>
+	<h3>11.LastIndexof()</h3>
+	<script type="text/javascript">
+		function getstr(str11){
+		document.write("<b>"+str11+"</b><br>");
+	}
+	let name10='Alexander Grahambell';
+	getstr("Last Index Of String="+name10.lastIndexOf('a'))
+		
+	</script>
+	<h3>12.CharCode()</h3>
+	<script type="text/javascript">
+		function getstr(str12){
+		document.write("<b>"+str12+"</b><br>");
+	}
+	let name11='java Script'
+    getstr("Original String: "+name5)
+	getstr('CharCodeAt of String = '+name11.charCodeAt('i'))
+	</script>
+	<h3>13.Trim()</h3>
+	<script type="text/javascript">
+		
+		function getstr(str13){
+		document.write("<b>"+str13+"</b><br>");
+	}
+		let name12='  Aditya college ';
+	    getstr("trim() method = "+name12.trim())
+	</script>
+	<h3>14.CharAt()</h3>
+	<script type="text/javascript">
+	   function getstr(str14){
+		document.write("<b>"+str14+"</b><br>");
+	}
+	let name13='DRIVE READY';
+    getstr("Original String: "+name13)
+	getstr("CharAt of a String="+name13.charAt(2))
+	</script>
+	<h3>15.ValueOf()</h3>
+	<script type="text/javascript">
+		let text = "Hello World!";
+        let result = text.valueOf();
+
+        document.write("valueOf of a String = "+result)
+	</script>
+	<h3>16.Split()</h3>
+	<script type="text/javascript">
+		function getstr(str16){
+		document.write("<b>"+str16+"</b><br>");
+	}
+	let name14='Divya ,Ramya, Sravya & Satya';
+	document.write("<b>Split of a String=</b>"+name14.split(","))
+	 
+	</script>
+	<h3>17.ToString()</h3>
+	<script type="text/javascript">
+		function getstr(str17){
+		document.write("<b>"+str17+"</b><br>");
+	}
+    let name15 = ["Banana", "Orange", "Apple", "Mango"];
+    document.write("<b>tostring of a string=</b>"+name15.toString() +"<br>")
+	</script>
+	<h3>18.Match()</h3>
+	<script type="text/javascript">
+		let name16= 'matchofMethod';
+    	function method13(name16){
+    		document.write("<b>Match of a String = </b>"+name16+"<br>");
+    	}
+    	method13(name16.match('of'));
+	</script>
+
+</body>
+</html>

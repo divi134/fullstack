@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ARRAY_METHODS</title>
+</head>
+<body>
+	<center>
+		<h1>ARRAY_METHODS</h1>
+		
+	</center>
+	<h3>1.Map()</h3>
+	<script type="text/javascript">
+		
+			let trainees=['Jilani','Ganesh'];
+			let trainees1=[{
+				'name':'Jilani',
+				'rollNo':'64',
+				'class':'3-BTech',
+				'college':'Aditya'
+			},{
+			    'name':'Ganesh',
+				'rollNo':'53',
+				'class':'3-BTech',
+				'college':'Aditya'
+           
+
+			}];
+			trainees1.map(function(indiviudal_trainee,i,arr){
+				document.write("Map Method of an Array = "+indiviudal_trainee.name+" "+indiviudal_trainee.rollNo+" "+indiviudal_trainee.class+" "+indiviudal_trainee.college +"<br>")
+			})
+	</script>
+	<h3>2.Filter()</h3>
+
+	<script type="text/javascript">
+		    
+             const ages = [19, 30, 20, 22, 13, 18, 15];
+
+            document.write("Original Array:"+ages+"<br>")            
+            document.write("Filter Method of an Array ="+ages.filter(checkAdult))
+
+            function checkAdult(age) {
+            return age >= 18;
+            }
+
+	</script>
+	<h3>3.Sort()</h3>
+	
+
+	<script type="text/javascript">
+        const nums = [55, 34 ,75, 12, 45, 87, 19, 98];
+        document.write("Original Array:"+nums+"<br>")  
+        document.write("Sort Method of an Array: " +nums.sort());
+	</script>
+	
+	<h3>4.ForEach()</h3>
+
+	<p id="for_id"></p>
+   
+	<script type="text/javascript">
+		
+
+        let race = "";
+        const lang = ["C", "C++", "Python", "Java"];
+        lang.forEach(myFunction);
+
+        document.write("ForEach Method of an Array: "+"<br>"+race );
+ 
+        function myFunction(item, index) {
+        race += index + ": " + item + "<br>"; 
+        }
+
+	</script>
+	<h3>5.Concat()</h3>
+	<script type="text/javascript">
+		const arr1 = ["Cat", "Dog"];
+        const arr2 = ["Lion", "Fox", "Tiger"];
+        const arr3 = ["Bull"];
+        
+        const Animals = arr1.concat(arr2, arr3); 
+        document.write("Concat Method Of an Array: "+Animals);
+	</script>
+	<h3>6.Every()</h3>
+	<script type="text/javascript">
+		let student_marks =[55,12,87,86,54,64];
+		let final_result = student_marks.every(function(score){
+			return score > 35;//true or False
+
+		})
+
+		 document.write("Every Method of an Array: "+final_result);
+	</script>
+	<h3>7.Some()</h3>
+	<script type="text/javascript">
+		const aged = [3, 10, 18, 20];
+        document.write("Some Method of an Array: "+aged.some(Adult));
+
+        function Adult(age) {
+         return age > 18;
+        }
+	</script>
+	<h3>8.Includes()</h3>
+	<script type="text/javascript">
+		const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.write("Original Array:"+fruits+"<br>")  
+        document.write("Includes Method of an Array: "+fruits.includes("Mango"));
+	</script>
+	<h3>9.Join()</h3>
+	<script type="text/javascript">
+		const vegies = ["carrot", "Beetroot", "Potato", "Tomato"];
+        document.write("Original Array:"+vegies+"<br>")  
+        let textt = vegies.join(" ; ");
+        document.write("Join Method of an Array: "+textt);
+	</script>
+	<h3>10.Reduce()</h3>
+	<p id="red_id"></p>
+	<script type="text/javascript">
+		const numbers = [643, 285, 234];
+        document.write("Original Array:"+numbers+"<br>")  
+        document.write("Reduce Method of an Array:"+numbers.reduce(myFunc));
+        function myFunc(total, num) {
+        return total - num;
+        }
+	</script>
+	<h3>11.Find()</h3>
+	<script type="text/javascript">
+		const score = [30, 40, 85, 90, 48, 60 ];
+        document.write("Original Array:"+score+"<br>")  
+        document.write("Find of an Array: "+score.find(nowin));
+
+        function nowin(lost) {
+        return lost > 50;
+        }
+	</script>
+	<h3>12.FindIndex()</h3>
+	<script type="text/javascript">
+		const res = [300, 700, 805, 900, 400, 302 ,200];
+        document.write("Original Array:"+res+"<br>")  
+		document.write("FindIndex of an Array: "+res.find(won)) 
+        function won(winner) {
+        return winner > 500;
+        }
+	</script>
+	<h3>13.IndexOf()</h3>
+	<script type="text/javascript">
+		const microsoft = ["Excel", "Powerpoint", "Word", "Office", "Teams"];
+        document.write("Original Array:"+microsoft+"<br>")  
+        let index = microsoft.indexOf("Word", 2);
+
+        document.write("IndexOf Method of an Array: "+index);
+	</script>
+	<h3>14.Fill()</h3>
+	<script type="text/javascript">
+		const fruit = ["Banana", "Orange", "Apple", "Mango"];
+        document.write("Original Array:"+fruit+"<br>")  
+        document.write("Fill Method of an Array: "+fruit.fill("Guava"));
+	</script>
+	<h3>15.Slice()</h3>
+	<script type="text/javascript">
+		const birds = ["eagle", "parrot", "peacock", "Sparrow", "crow"];
+        document.write("Original Array:"+birds+"<br>") 
+        const wings = birds.slice(1, 3);
+
+        document.write("Slice Method of an Array: "+wings);
+	</script>
+	<h3>16.Reverse()</h3>
+	<script type="text/javascript">
+		const colors = ["Blue", "Orange", "Green", "Red"];
+        document.write("Original Array:"+colors+"<br>");
+        document.write("Reverse Method of an Array: "+colors.reverse());
+	</script>
+	<h3>17.Push()</h3>
+	<script type="text/javascript">
+		const triners = ["Ganesh","Jilani", "Jeevan", "Koushik"];
+        document.write("Original Array:"+triners+"<br>");
+        triners.push("Pavan");
+
+        document.write("Push Method of an Array: "+triners);
+	</script>
+	<h3>18.Pop()</h3>
+	<script type="text/javascript">
+		const rollno = ["501", "502", "503", "504"];
+        document.write("Original Array:"+rollno+"<br>");
+        let removed = rollno.pop();
+        document.write("Pop Method of an Array: "+rollno);
+		
+	</script>
+	<h3>19.Shift()</h3>
+	<script type="text/javascript">
+		const browser = ["Chrome", "Explorer", "Firefox", "Opera"];
+        document.write("Original Array:"+browser+"<br>");
+        browser.shift();
+
+        document.write("shift Method of an Array: "+browser);
+	</script>
+	<h3>20.Unshift()</h3>
+	<script type="text/javascript">
+		const fruitsss = ["Banana ", "Orange ", "Apple ", "Mango "];
+       fruitsss.unshift("Lemon ", "Pineapple");
+
+        document.write("Unshift Method of an Array: "+fruitsss) 
+	</script>
+
+
+</body>
+</html>

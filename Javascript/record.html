@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RECORD</title>
+</head>
+<body>
+	<h1>RECORD</h1>
+	<script>
+		var record=[{
+			'sub':'java',
+			'marks':98,
+		},
+		{
+			'sub':'C',
+			'marks':91,
+		},
+		{
+			'sub':'C++',
+			'marks':94,
+		},
+		{
+			'sub':'Python',
+			'marks':90,
+		},
+		{
+			'sub':'HTML',
+			'marks':94,
+		}]
+		for(var i=0; i<record.length; i++)
+		{
+			document.write("<br>",record[i].sub,"<br>");
+			document.write("<br>",record[i].marks,"<br>");
+			console.log(record[i].sub);
+			console.log(record[i].marks);
+			console.log(record[i]);
+			console.log(record[i].sub,record[i].marks);
+		}
+		for (var i = 0; i < record.length; i++) {
+			console.log(record[i]);
+		}
+		for (var i = 0; i < record.length; i++) {
+			for(key in record[i]);
+			{
+				document.write(record[i][key],"<br>");
+			}
+			document.write("<br>");
+		}
+		for (var i = 0; i < record.length; i++) {
+			console.log(i+1,record[i].sub,record[i].marks);
+		}
+		
+	</script>
+</body>
+</html>

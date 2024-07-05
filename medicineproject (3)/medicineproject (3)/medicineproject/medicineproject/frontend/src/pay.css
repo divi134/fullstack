@@ -1,0 +1,23 @@
+.pay{
+    border:1px solid gray;
+    padding:20px;
+    height:600px;
+    width:600px;
+    margin-left:400px;
+    margin-top:1px;
+    box-shadow:2px 2px 2px 2px gray;
+    
+    align-content: center;
+}
+.paypal{
+    margin-left:30px;
+    margin-right:10px;
+    
+    color:rgb(96, 127, 185);
+    font-size: 30px;
+    
+}
+.google{
+    color:linear-gradient(red,green);
+    font-size: 50px;
+}

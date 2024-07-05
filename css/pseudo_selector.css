@@ -1,0 +1,13 @@
+a:active
+{
+	color: blue;
+}
+a:hover
+{
+	color: royalblue;
+	font-size: 40px;
+}
+a:link
+{
+	color: green;
+}

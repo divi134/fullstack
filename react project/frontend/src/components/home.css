@@ -1,0 +1,38 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+.homes {
+  padding-top: 10px;
+  background: linear-gradient(aliceblue, bisque);
+}
+.content {
+  border: 2px solid green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  background-size: cover;
+  background-image: url("./images/order.png");
+}
+img {
+  scroll-snap-align: start;
+  min-width: 100%;
+  border-radius: 0.2em;
+}
+.butt {
+  background-color: rgb(34, 131, 34);
+  color: gold;
+  margin: 10px;
+  margin-left: 20px;
+  border-radius: 5%;
+  height: 60px;
+  width: 400px;
+  font-size: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.last {
+  background: linear-gradient(rgb(237, 222, 141), palegoldenrod);
+  height: 100px;
+}

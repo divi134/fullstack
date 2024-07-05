@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Image Slider</title>
+</head>
+<body>
+	<br><br>
+	<center>
+<img name="slide" height="50%" width="50%" >
+
+<script type="text/javascript">
+	var i=0;
+	var images =[];
+	images[0]='sliders/img1.jfif';
+	images[1]='sliders/img2.jfif';
+	images[2]='sliders/img3.jfif';
+	images[3]='sliders/img4.jfif';
+	images[4]='sliders/img5.jfif';
+	// images[5]='Images/pri5.jpg';
+	// images[6]='Images/pri7.jpg';
+	// images[7]='Images/pri6.jpg';
+	
+	function changeimg(){
+		document.slide.src = images[i];
+		if(i<images.length-1){
+			i++;
+		}
+		else{
+			i=0;
+		}
+		setTimeout('changeimg()',1000);
+	}
+	window.onload=changeimg;
+</script>
+</center>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+h1{
+	text-align: center;
+	color: purple;
+	text-shadow: 2px 3px 3px palegoldenrod;
+}
+div{
+	height: 300px;
+	width: 400px;
+	border: 3px solid slateblue;
+}
+p{
+	text-align: justify;
+	font: unset;
+}

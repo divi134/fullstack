@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Array Methods | For Each</h2>
+    <p>This method does not create any new array and returns the array after iteration</p>
+    <script>
+        let salaries=[40000, 23000, 123000];
+        salaries.forEach(function(amount, ind, arr)
+        {
+            var increment= amount/10;
+            console.log(increment)
+            arr[ind]=amount+increment;
+        })
+        document.write(salaries+"<br>")
+        console.log(salaries)
+
+        salaries.forEach(test)
+        function test(amount, ind, arr){
+            var increment=amount/10;
+            console.log(increment)
+            arr[ind]=amount+increment
+        }
+        document.write(salaries)
+        console.log(salaries);
+    </script>
+</body>
+</html>

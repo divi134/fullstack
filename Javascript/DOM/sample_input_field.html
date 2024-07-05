@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Input</title>
+</head>
+<body>
+	<input type="text" name="" id="ins_id">
+	<br>
+	<label>Enter your name</label>
+	<br>
+	<input type="text" name="" id="ins_id">
+	<button type="button" onclick="myFunction()">Submit</button>
+	<script type="text/javascript">
+		let ins=document.getElementById('ins_id');
+		ins.value='Divya';
+		ins=document.getElementById('ins_id').style.border='1px solid red';
+		function myFunction() {
+		  // Get the value of the input field with id="numb"
+		  let x = document.getElementById("ins_id").value;
+		  // If x is Not a Number or less than one or greater than 10
+		  let text;
+		  if (isNaN(x) || x < 1 || x > 10) {
+		    text = "Input not valid";
+		  } else {
+		    text = "Input OK";
+		  }
+		  document.getElementById("demo").innerHTML = text;
+		}
+	</script>
+</body>
+</html>

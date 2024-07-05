@@ -1,0 +1,34 @@
+h1{
+	background: skyblue;
+	display: inline;
+}
+span{
+	background: deeppink;
+	display: block;
+}
+.sub1{
+	height: 300px;
+	width: 200px;
+	border: 5px solid yellow;
+	float: left;
+}
+.sub2{
+	height: 300px;
+	width: 200px;
+	border: 5px solid peachpuff;
+	float: left;
+	visibility: hidden;
+}
+.sub3{
+	height: 300px;
+	width: 200px;
+	border: 5px solid orchid;
+	float: left;
+	display: none;
+}
+.sub4{
+	height: 300px;
+	width: 200px;
+	border: 5px solid chartreuse;
+	float: left;
+}

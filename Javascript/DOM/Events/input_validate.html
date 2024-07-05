@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>keyboards</title>
+</head>
+<body>
+	<!-- <center>
+		<h1>key events</h1>
+		<ol>
+			<li>onkeydown</li>
+			<li>onkeyup</li>
+			<li>onkeypress</li>
+		</ol>
+	
+   <form>
+   	<label>key down</label>
+   	<input type="text" name="" onkeydown="down(this.value)">
+   	<br>
+   	<span id='sp_id'>output: </span>
+   	<br>
+   	<br>
+   	<label>key up</label>
+   	<input type="text" name="" onkeyup ="down(this.value)">
+   	<br>	
+   	<br>
+   	<label>key press</label>
+   	<input type="text" name="" onkeypress="down(this.value)">
+   	<br>
+   </form>
+  </center> -->
+   <!-- <script type="text/javascript">
+   	function down(val)
+   	{
+   		document.getElementById('sp_id').innerText=val;
+   		document.body.style.background=val;
+   	}
+   </script> -->
+   <form>
+   	<label>Enter your name</label>
+   	<input  id="in_id" type="text" name="" onkeyup="down(this.value)">
+   	<br>
+   	<span id='sp_id'> </span>
+   	<br>
+   </form>
+<script type="text/javascript">
+	function down(val)
+	{
+		if(val=="")
+		{
+			document.getElementById('in_id').style.border="red";
+			document.getElementById('sp_id').innerText="please enter name";
+			document.getElementById('sp_id').style.color="red";
+
+		}
+		else
+		{
+			document.getElementById('sp_id').innerText=val;
+   		  /*   document.body.style.background=val;*/
+		}
+	}
+</script>
+
+</body>
+</html>

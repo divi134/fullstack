@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>every Method</title>
+</head>
+<body>
+    <h2>Array Methods | every()</h2>
+    <p>This method returns boolean value. It checks all the values in the array and if all the elements in the array satisfies the given condition then it returns true or else false</p>
+    <script>
+        let student_marks= [87,56,89,44,76,83,90,69,65]
+        let final_result = student_marks.every(function(score)
+        {
+            return score>40;
+        })
+        console.log(final_result)
+    </script>
+</body>
+</html>
